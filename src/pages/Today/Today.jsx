@@ -3,11 +3,18 @@ import React from 'react';
 import { css } from "@emotion/react";
 import * as S from "./Style";
 import MainContainer from '../../components/MainConatiner/MainContainer';
+import Header from '../../components/MainConatiner/Header/Header';
+import AddNewTaskButton from '../../components/Buttons/AddNewTaskButton/AddNewTaskButton';
+import TaskList from '../../components/Lists/TaskList/TaskList';
+
 
 function Today(props) {
+    
     return (
         <MainContainer>
-                
+            <Header title={"Today"} count={5}/>
+            <AddNewTaskButton />
+            <TaskList />
         </MainContainer>
     );
 }
